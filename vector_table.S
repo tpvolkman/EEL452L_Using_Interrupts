@@ -35,10 +35,10 @@ vtable:
     .word 0								// 0x0000 0050 (IRQ 4)
     .word 0								// 0x0000 0054 (IRQ 5)
     .word EXTI0_IRQHandler				// 0x0000 0058 (IRQ 6)
-    .word EXIT1_IRQHandler				// 0x0000 005C (IRQ 7)
-    .word EXIT2_IRQHandler				// 0x0000 0060 (IRQ 8)
-    .word EXIT3_IRQHandler				// 0x0000 0064 (IRQ 9)
-    .word EXIT4_IRQHandler				// 0x0000 0068 (IRQ 10)
+    .word EXTI1_IRQHandler				// 0x0000 005C (IRQ 7)
+    .word EXTI2_IRQHandler				// 0x0000 0060 (IRQ 8)
+    .word EXTI3_IRQHandler				// 0x0000 0064 (IRQ 9)
+    .word EXTI4_IRQHandler				// 0x0000 0068 (IRQ 10)
     .word 0								// 0x0000 006C (IRQ 11)
     .word 0								// 0x0000 0070 (IRQ 12)
     .word 0								// 0x0000 0074 (IRQ 13)
@@ -92,17 +92,17 @@ vtable:
 	.weak EXTI0_IRQHandler
     .thumb_set EXTI0_IRQHandler,default_interrupt_handler
 	
-	.weak EXIT1_IRQHandler
-    .thumb_set EXIT1_IRQHandler,default_interrupt_handler
+	.weak EXTI1_IRQHandler
+    .thumb_set EXTI1_IRQHandler,default_interrupt_handler
 	
-	.weak EXIT2_IRQHandler
-    .thumb_set EXIT2_IRQHandler,default_interrupt_handler
+	.weak EXTI2_IRQHandler
+    .thumb_set EXTI2_IRQHandler,default_interrupt_handler
 	
-	.weak EXIT3_IRQHandler
-    .thumb_set EXIT3_IRQHandler,default_interrupt_handler
+	.weak EXTI3_IRQHandler
+    .thumb_set EXTI3_IRQHandler,default_interrupt_handler
 	
-	.weak EXIT4_IRQHandler
-    .thumb_set EXIT4_IRQHandler,default_interrupt_handler
+	.weak EXTI4_IRQHandler
+    .thumb_set EXTI4_IRQHandler,default_interrupt_handler
 	
 	.weak EXTI9_5_IRQHandler
     .thumb_set EXTI9_5_IRQHandler,default_interrupt_handler
